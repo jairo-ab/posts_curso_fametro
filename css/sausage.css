@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+#nav-banner{
+    width: 100%;
+    background: #4A50C0;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    border-bottom: 2px solid #fbfbfb;
+}
+main {
+    max-width: 740px;  /*must be udpated when nav items are added or removed*/
+    margin: 0 auto 0 auto;
+    /*background: pink;*/ /*used for testing width*/
+}
+
+/* Sausage Links Styling */
+.sausage-links {
+    position: relative;
+}
+.sausage-links:before, .sausage-links:after {
+    content: '';
+    height: calc(100% - 2em);
+    pointer-events: none;
+    position: absolute;
+    top: 1em;
+    width: 10px;
+    z-index: 2;
+}
+.sausage-links:before {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%);
+    right: 0;
+}
+.sausage-links:after {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, white 100%);
+    left: 0;
+}
+.sausage-links ul {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+    padding: 1em 0;
+    -webkit-overflow-scrolling: touch;
+    justify-content: left; 
+}
+.sausage-links ul li {
+    padding: 0 8px;
+    white-space: nowrap;
+    list-style: none;
+}
+.sausage-links ul li a, .sausage-links ul li a:visited {
+    border-radius: 50px;
+    display: inline-block;
+    padding: 10px 24px;
+    text-decoration: none;
+    background: #F5F6FA;
+    font-weight: 600;
+    font-size: 16px;
+}
+.sausage-links ul li a:hover, .sausage-links ul li a:visited:hover {
+    background: #FCEEE9;
+    border-color: #4A50C0;
+    box-shadow: 0 5px 20px rgba(30, 30, 30, 0.3);
+    transform: scale(1.03);
+}
+.current-page {
+   background-color: #4A50C0!important;
+   pointer-events: none;
+   cursor: default;
+   border: 2px solid #F5F6FA;
+   color: #F5F6FA;
+}

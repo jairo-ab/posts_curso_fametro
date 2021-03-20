@@ -1,0 +1,58 @@
+.promo-banner {
+    width: 100%;
+    background-color: #D0401B;
+    color: #fff;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 6px 3px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 6px 3px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 6px 3px 0px rgba(0, 0, 0, 0.16);
+}
+.promo-banner > div {
+    padding: 10px 32px;
+    max-width: 608px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.promo-banner p {
+    font-size: 18px;
+    font-weight: 600;
+}
+.promo-banner button {
+    font-size: 15px;
+    font-weight: 600;
+    background-color: #fff;
+    color: #d1246a;
+    -webkit-box-shadow: 0px 6px 3px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 6px 3px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 6px 3px 0px rgba(0, 0, 0, 0.16);
+    border-radius: 9999px;
+    border: none;
+    height: 40px;
+    padding: 0 20px;
+    margin-right: 1rem;
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+}
+@media (min-width: 607px) {
+    .promo-banner > div {
+        max-width: 608px;
+   }
+}
+@media (min-width: 823px) {
+    .promo-banner > div {
+        max-width: 824px;
+   }
+}
+@media (min-width: 1112px) {
+    .promo-banner > div {
+        max-width: 1112px;
+   }
+}
+@media (min-width: 1400px) {
+    .promo-banner > div {
+        max-width: 1400px;
+   }
+}
