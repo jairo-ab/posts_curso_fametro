@@ -19,6 +19,11 @@
     font-size: 18px;
     font-weight: 600;
 }
+.font-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: black;
+}
 .promo-banner button {
     font-size: 15px;
     font-weight: 600;
